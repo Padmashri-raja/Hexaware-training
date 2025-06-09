@@ -1,0 +1,31 @@
+Stack and Queue concept:
+Question : Create a help desk system where student raise support requests that are solved in the order received using stack and queue.
+
+Step 1: Start
+Step 2: Initialize an empty Queue Q and Stack S
+Step 3: Repeat until user chooses to Exit:
+    a. Display Menu:
+        1. Raise Request
+        2. Solve Request
+        3. View Pending Requests
+        4. Cancel Last Request
+        5. Exit
+    b. Accept user input (choice)
+    c. Based on input:
+        i.   If choice == 1:
+                - Accept request input
+                - Enqueue request to Q
+                - Push request to S
+        ii.  If choice == 2:
+                - If Q is not empty, dequeue and display the solved request
+                - Else, display “No pending requests”
+        iii. If choice == 3:
+                - Display all elements in Q
+        iv.  If choice == 4:
+                - If S is not empty:
+                      - Pop top of S
+                      - Remove same item from Q
+                - Else, display “No recent request to cancel”
+        v.   If choice == 5:
+                - Exit the program
+Step 4: End
